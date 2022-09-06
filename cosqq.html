@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="style.css" rel="stylesheet">
-</head>
-<body>
+    <link href="./css/index.css" rel="stylesheet">
+  </head>
+  <body>
     <header>
-        <nav>
+      <nav>
             <ul>
                 <li>
-                    <a>About</a>
+                    <a>About</a> // where is href attribute?
                 </li>
                 <li>
                     <a>Offer</a>
@@ -27,73 +27,106 @@
           <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
           <button>Explore</button>
         </div>
-        <img src="images/photo1.png">
+        <div class="triangle-bottomright">
+        </div>
+
       </header>
+      
+      
+      <main>
 
+          <!-- // offer? in class? this is big container so naming is very bad!  -----poprawione----
+      // we dont use clearfix stop using floats this is old approach! and start using flex!! -----zrobione------>
 
-      <section class="offer clearfix">
-        <h1>Offer</h1>
-        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-        <div class="prod">
-          <img src="images/services1.png" alt="box">
-          <h2>Lorem ipsum</h2>
-          <p class="description">Lorem ipsum dolor sit amet, architecto asperiores, sequi obcaecati, alias sunt ea. Soluta, rerum, perspiciatis.</p>
-          <button>Lern More</button>
-        </div>
-        <div class="prod">
-          <img src="images/services2.png" alt="box">
-          <h2>Lorem ipsum</h2>
-          <p class="description">Lorem ipsum dolor sit amet, architecto asperiores, sequi obcaecati, alias sunt ea. Soluta, rerum, perspiciatis.</p>
-          <button>Lern More</button>
-        </div>
-        <div class="prod">
-          <img src="images/services3.png" alt="box">
-          <h2>Lorem ipsum</h2>
-          <p class="description">Lorem ipsum dolor sit amet, architecto asperiores, sequi obcaecati, alias sunt ea. Soluta, rerum, perspiciatis.</p>
-        <button>Lern More</button>
-        </div>
-      </section>
-
-
-
-      <section class="info">
-        <div class="wiado clearfix">
-          <div class="inf">
-            <img src="images/ccccccc" alt="qqqqqq">
-          </div>
-          <div class="about">
+       
+    <section id="offer"> 
+      <!-- // we assume that secion is special element and will be one at page it should be identifier here -->
+      <h1>Offer</h1>
+      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+      <div class="all_products">
+          <div class="products"> 
+            <div class="offer_tile_image">
+              <img src="images/services1.png" alt="box"> 
+            </div>
             <h2>Lorem ipsum</h2>
-            <h1>Lorem ipsum dolor sit</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed doloremque quidem illo doloribus ipsa, facere, quae eligendi debitis. A debitis totam amet aperiam enim. Qui velit corrupti consequatur nihil est.</p>
+            <p>Lorem ipsum dolor sit amet, architecto asperiores, sequi obcaecati, alias sunt ea. Soluta, rerum, perspiciatis.Lorem ipsum dolor sit amet, architecto asperiores, sequi obcaecati, alias sunt ea. Soluta, rerum, perspiciatis.</p>
+            <input class="button1" type="submit" text="Lern More"/>
           </div>
-        </div>
-        <div class="wiado clearfix">
-          <div class="inf">
-            <img src="images/cccccc" alt="qqqqqqqqq">
-          </div>
-          <div class="about">
+
+
+          <div class="products">
+            <div class="offer_tile_image">
+              <img src="images/services2.png" alt="box"> 
+              <!-- // images should be close in another div! its better to style it and manage it after  ------zrobione-- -->
+            </div>
             <h2>Lorem ipsum</h2>
-            <h1>Lorem ipsum dolor sit</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed doloremque quidem illo doloribus ipsa, facere, quae eligendi debitis. A debitis totam amet aperiam enim. Qui velit corrupti consequatur nihil est.</p>
+            <p>Lorem ipsum dolor sit amet, architecto asperiores, sequi obcaecati, alias sunt ea. Soluta, rerum, perspiciatis.</p> 
+            <!-- // you dont need class here there is no another p element here  ------zmienione---- -->
+            <input class="button2" type="submit" text="Lern More"/>
+          </div>
+
+
+          <div class="products">
+            <div class="offer_tile_image">
+            <img src="images/services3.png" alt="box">
+            </div>
+            <h2>Lorem ipsum</h2>
+            <p class="description">Lorem ipsum dolor sit amet, architecto asperiores, sequi obcaecati, alias sunt ea. Soluta, rerum, perspiciatis.</p>
+            <input class="button3" type="submit" text="Lern More"/>
           </div>
         </div>
-      </section>
-      <section class="contact clearfix">
-        <h1>Contact</h1>
-        <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
-        <div class="imie" >
-            <input type="text" placeholder="Imie" />
-        </div>
-        <div class="gmail">
-            <input type="email" placeholder="Gmail" />
-        </div>
-        <div class="temat">
-            <input type="text" placeholder="Temat" />
-        </div>
-        <div class="tresc">
-        <input type="text" placeholder="Tresc" class="tresss" />
-        </div>
-        <button>send</button>
     </section>
-</body>
+
+
+    <section id="informations">
+      <div class="informations_container">
+          <div class="information_block"> 
+            <div class="information_image">
+              <img src="images/ccccccc" alt="qqqqqq">
+            </div>
+            <div class="information_block_decription">
+              <h2>Lorem ipsum</h2>
+              <h1>Lorem ipsum dolor sit</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed doloremque quidem illo doloribus ipsa, facere, quae eligendi debitis. A debitis totam amet aperiam enim. Qui velit corrupti consequatur nihil est.</p>
+            </div>
+          </div>
+
+          <div class="information_block"> 
+            <div class="information_block_decription">
+              <h2>Lorem ipsum</h2>
+              <h1>Lorem ipsum dolor sit</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed doloremque quidem illo doloribus ipsa, facere, quae eligendi debitis. A debitis totam amet aperiam enim. Qui velit corrupti consequatur nihil est.</p>
+            </div>
+              <div class="information_image">
+                <img src="images/ccccccc" alt="qqqqqq">
+              </div>
+          </div>
+      </div>
+    </section>
+
+
+      <section id="contact">
+        <div class="contact_container">
+          <h1>Contact</h1>
+          <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+
+          <form>
+            <div class="name" >
+                <input type="text" placeholder="Imie" />
+            </div>
+            <div class="email">
+                <input type="email" placeholder="Gmail" />
+            </div>
+            <div class="topic">
+                <input type="text" placeholder="Temat" />
+            </div>
+            <div class="description">
+              <input type="text" placeholder="Tresc" class="tresss" />
+            </div>
+            <input class="subbmit_form" type="submit" text="dupa"/>
+          </form>
+        </div>
+      </section>
+  </main>
+  </body>
 </html>

@@ -1,0 +1,93 @@
+
+#contact{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1400px;
+  }
+  
+  #contact .contact_container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  #contact h1{
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 0;
+  }
+  #contact h2{
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 4rem;
+  }
+  #contact form{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+      box-sizing: border-box;
+  }
+  
+  #contact form input{
+    width: 100%;
+    padding: 1.5rem;
+    margin-bottom: 5%;
+    border: solid blue 3px;
+    box-sizing: border-box;
+  }
+  
+  #contact form div{
+    display: inline-flex;
+    width: 100%;
+  }
+  
+  #contact form .name,#contact form .email {
+    box-sizing: border-box;
+    width: 47.5%;
+  }
+  
+  #contact form .name{
+    margin-right: 5%;
+  }
+  
+  #contact form .description{
+    display: inline-flex;
+    min-height: 400px;
+  }
+  
+  #contact form input{
+    position: relative;
+  }
+  
+  #contact form input::placeholder{
+    position: absolute;
+    top: 1rem;
+    color: black;
+    font-weight: 600;
+  }
+  
+  #contact form .subbmit_form{
+    width: 20%;
+    background-color: #005AD5;
+    color: white;
+    cursor: pointer;
+    border: solid #005AD5;
+    margin-bottom: 5%;
+  }
+
+  /* section [type="submit"] {
+  background-color: pink;
+}
+
+section [type="submit"] {
+  width: 20% !important;
+  justify-items: center;
+  background-color: #005AD5;
+  color: white;
+  cursor: pointer;
+  border: solid #005AD5;
+  margin-bottom: 5%;
+} */
