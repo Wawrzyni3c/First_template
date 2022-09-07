@@ -1,99 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="style.css" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a>About</a>
-                </li>
-                <li>
-                    <a>Offer</a>
-                </li>
-                <li>
-                    <a>Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="tak">
-          <h1>Lorem ipsum dolor </h1>
-          <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-          <button>Explore</button>
-        </div>
-        <img src="images/photo1.png">
-      </header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link href="./css/index.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header>
+			<div class="header_container">
+				<div class="logo">
+					<img src="./public/icons/AM-system.png" alt="logo" />
+				</div>
+				<nav>
+					<ul>
+						<li>
+							<a href="#informations">About</a>
+						</li>
+						<li>
+							<a href="#offer">Offer</a>
+						</li>
+						<li>
+							<a href="#contact">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
 
+		<main>
+			<section id="hero">
+				<div class="welcome_text">
+					<h1>Lorem ipsum dolor</h1>
+					<h2>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum
+						dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit
+						amet consectetur adipisicing elit.
+					</h2>
+					<input class="subbmit_explore" type="submit" value="Explore" />
+				</div>
+				<div class="start_image">
+					<img
+						src="./public/images/undraw_House_searching_re_stk8 1.png"
+						alt="house"
+					/>
+				</div>
+			</section>
 
-      <section class="offer clearfix">
-        <h1>Offer</h1>
-        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-        <div class="prod">
-          <img src="images/services1.png" alt="box">
-          <h2>Lorem ipsum</h2>
-          <p class="description">Lorem ipsum dolor sit amet, architecto asperiores, sequi obcaecati, alias sunt ea. Soluta, rerum, perspiciatis.</p>
-          <button>Lern More</button>
-        </div>
-        <div class="prod">
-          <img src="images/services2.png" alt="box">
-          <h2>Lorem ipsum</h2>
-          <p class="description">Lorem ipsum dolor sit amet, architecto asperiores, sequi obcaecati, alias sunt ea. Soluta, rerum, perspiciatis.</p>
-          <button>Lern More</button>
-        </div>
-        <div class="prod">
-          <img src="images/services3.png" alt="box">
-          <h2>Lorem ipsum</h2>
-          <p class="description">Lorem ipsum dolor sit amet, architecto asperiores, sequi obcaecati, alias sunt ea. Soluta, rerum, perspiciatis.</p>
-        <button>Lern More</button>
-        </div>
-      </section>
+			<div class="triangle-bottomright"></div>
 
+			<section id="offer">
+				<h1>Offer</h1>
+				<h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+				<div class="all_products">
+					<div class="product">
+						<div class="offer_tile_image">
+							<img src="./public/icons/Vector.png" alt="box" />
+						</div>
+						<h2>Lorem ipsum</h2>
+						<p>
+							Lorem ipsum dolor sit amet, architecto asperiores, sequi
+							obcaecati, alias sunt ea. Soluta, rerum, perspiciatis.Lorem ipsum
+							dolor sit amet, architecto asperiores, sequi obcaecati, alias sunt
+							ea. Soluta, rerum, perspiciatis.
+						</p>
+						<button>Learn More</button>
+					</div>
 
+					<div class="product">
+						<div class="offer_tile_image">
+							<img src="./public/icons/Vector.png" alt="box" />
+						</div>
+						<h2>Lorem ipsum</h2>
+						<p>
+							Lorem ipsum dolor sit amet, architecto asperiores, sequi
+							obcaecati, alias sunt ea. Soluta, rerum, perspiciatis.
+						</p>
+						<button>Learn More</button>
+					</div>
 
-      <section class="info">
-        <div class="wiado clearfix">
-          <div class="inf">
-            <img src="images/ccccccc" alt="qqqqqq">
-          </div>
-          <div class="about">
-            <h2>Lorem ipsum</h2>
-            <h1>Lorem ipsum dolor sit</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed doloremque quidem illo doloribus ipsa, facere, quae eligendi debitis. A debitis totam amet aperiam enim. Qui velit corrupti consequatur nihil est.</p>
-          </div>
-        </div>
-        <div class="wiado clearfix">
-          <div class="inf">
-            <img src="images/cccccc" alt="qqqqqqqqq">
-          </div>
-          <div class="about">
-            <h2>Lorem ipsum</h2>
-            <h1>Lorem ipsum dolor sit</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed doloremque quidem illo doloribus ipsa, facere, quae eligendi debitis. A debitis totam amet aperiam enim. Qui velit corrupti consequatur nihil est.</p>
-          </div>
-        </div>
-      </section>
-      <section class="contact clearfix">
-        <h1>Contact</h1>
-        <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
-        <div class="imie" >
-            <input type="text" placeholder="Imie" />
-        </div>
-        <div class="gmail">
-            <input type="email" placeholder="Gmail" />
-        </div>
-        <div class="temat">
-            <input type="text" placeholder="Temat" />
-        </div>
-        <div class="tresc">
-        <input type="text" placeholder="Tresc" class="tresss" />
-        </div>
-        <button>send</button>
-    </section>
-</body>
+					<div class="product">
+						<div class="offer_tile_image">
+							<img src="./public/icons/Vector.png" alt="box" />
+						</div>
+						<h2>Lorem ipsum</h2>
+						<p class="description">
+							Lorem ipsum dolor sit amet, architecto asperiores, sequi
+							obcaecati, alias sunt ea. Soluta, rerum, perspiciatis.
+						</p>
+						<button>Learn More</button>
+					</div>
+				</div>
+			</section>
+
+			<section id="informations">
+				<div class="informations_container">
+					<div class="information_block">
+						<div class="information_image">
+							<img
+								src="./public/images/undraw_under_construction_46pa 1.png"
+								alt="information_image#1"
+							/>
+						</div>
+						<div class="information_block_decription">
+							<h2>Lorem ipsum</h2>
+							<h1>Lorem ipsum dolor sit</h1>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+								doloremque quidem illo doloribus ipsa, facere, quae eligendi
+								debitis. A debitis totam amet aperiam enim. Qui velit corrupti
+								consequatur nihil est.
+							</p>
+						</div>
+					</div>
+
+					<div class="information_block">
+						<div class="information_block_decription">
+							<h2>Lorem ipsum</h2>
+							<h1>Lorem ipsum dolor sit</h1>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+								doloremque quidem illo doloribus ipsa, facere, quae eligendi
+								debitis. A debitis totam amet aperiam enim. Qui velit corrupti
+								consequatur nihil est.
+							</p>
+						</div>
+						<div class="information_image">
+							<img
+								src="./public/images/undraw_houses3_xwf7 1.png"
+								alt="information_image#2"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact">
+				<div class="contact_container">
+					<h1>Contact</h1>
+					<h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+
+					<form>
+						<div class="name">
+							<input type="text" placeholder="Imie" />
+						</div>
+						<div class="email">
+							<input type="email" placeholder="Gmail" />
+						</div>
+						<div class="topic">
+							<input type="text" placeholder="Temat" />
+						</div>
+						<div class="description">
+							<input type="text" placeholder="Tresc" class="tresss" />
+						</div>
+						<input class="subbmit_form" type="submit" text="dupa" />
+					</form>
+				</div>
+			</section>
+		</main>
+	</body>
 </html>
