@@ -1,0 +1,54 @@
+// @import "/scss/_variables.scss";
+$primary-color: #005ad5;
+$secondary-color: white;
+#hero {
+	background-color: $primary-color;
+	display: flex;
+	align-items: center;
+	min-height: 720px;
+	position: relative;
+	.welcome_text {
+		width: 50%;
+		margin-left: 10%;
+		color: $secondary-color;
+		display: flex;
+		flex-direction: column;
+		h1 {
+			width: 50%;
+			font-size: 2.5rem;
+			margin: 5rem 0rem 2rem;
+		}
+		h2 {
+			width: 50%;
+			font-size: 1.5rem;
+			font-weight: normal;
+		}
+		.subbmit_explore {
+			margin-top: 2rem;
+			width: 30%;
+			font-weight: 100;
+			line-height: 3rem;
+			padding: 0 5%;
+			font-size: 12px;
+			color: $primary-color;
+			background-color: white;
+			cursor: pointer;
+			border-radius: 10px;
+			margin-bottom: 4rem;
+		}
+	}
+	.start_image {
+		margin-top: 4rem;
+		width: 50%;
+		flex-wrap: wrap;
+		object-fit: contain;
+	}
+}
+
+.triangle-bottomright {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 300px solid #005ad5;
+	border-right: 1802px solid transparent;
+}

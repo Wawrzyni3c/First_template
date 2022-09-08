@@ -1,0 +1,50 @@
+#offer {
+	margin: 0%;
+	margin-top: 200px;
+	max-width: 1864px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	padding: 5%;
+	h1 {
+		font-size: 50px;
+	}
+	h2 {
+		font-size: 26px;
+	}
+	p {
+		font-size: 18px;
+		line-height: 140%;
+		padding: 0 20px;
+		font-weight: 200;
+		margin-top: 5%;
+	}
+	.all_products {
+		margin: 20px;
+		padding: 5%;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: space-between;
+		.product {
+			min-height: 500px;
+			border: solid 2px black;
+			border-radius: 20px;
+			width: 30%;
+			button {
+				width: 150px;
+				height: 60px;
+				color: $primary-color;
+				border: solid $primary-color 2px;
+				border-radius: 5px;
+				cursor: pointer;
+				margin: 2.5% 0% 10% 0%;
+				&:hover {
+					color: red;
+				}
+			}
+			.offer_tile_image {
+				padding-top: 5%;
+			}
+		}
+	}
+}
