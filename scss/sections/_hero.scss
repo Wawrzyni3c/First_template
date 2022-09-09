@@ -2,11 +2,12 @@
 $primary-color: #005ad5;
 $secondary-color: white;
 #hero {
-	background-color: $primary-color;
 	display: flex;
+	position: relative;
 	align-items: center;
 	min-height: 720px;
-	position: relative;
+	background-color: $primary-color;
+
 	.welcome_text {
 		width: 50%;
 		margin-left: 10%;
@@ -16,7 +17,7 @@ $secondary-color: white;
 		h1 {
 			width: 50%;
 			font-size: 2.5rem;
-			margin: 5rem 0rem 2rem;
+			// margin: 5rem 0rem 2rem;
 		}
 		h2 {
 			width: 50%;
@@ -43,12 +44,55 @@ $secondary-color: white;
 		flex-wrap: wrap;
 		object-fit: contain;
 	}
+	.triangle-bottomright {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		height: 40%;
+		// -webkit-clip-path: polygon(0% 0%, 0% 20%, 100% 0%);
+		clip-path: polygon(0% 0%, 0% 40%, 100% 0%);
+		background-color: #005ad5;
+		margin-top: -1px;
+	}
 }
 
-.triangle-bottomright {
-	position: absolute;
-	width: 0;
-	height: 0;
-	border-top: 300px solid #005ad5;
-	border-right: 1802px solid transparent;
+@media (max-width: 767px) {
+	#hero {
+		width: 100%;
+		justify-content: center;
+	}
+	#hero .welcome_text {
+		text-align: center;
+		margin-left: 0;
+		width: 90%;
+		.subbmit_explore {
+			margin-bottom: 0;
+		}
+		h1 {
+			width: 100%;
+		}
+		h2 {
+			width: 100%;
+		}
+	}
+	.start_image {
+		display: none;
+	}
+	.triangle-bottomright {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		height: 40%;
+		// -webkit-clip-path: polygon(0% 0%, 0% 20%, 100% 0%);
+		clip-path: polygon(0% 0%, 0% 20%, 100% 0%);
+		background-color: #005ad5;
+		margin-top: -1px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	//lg
 }
