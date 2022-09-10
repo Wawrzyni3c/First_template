@@ -1,79 +1,91 @@
 body {
-	margin: 0%;
-	header {
-		width: 100%;
-		background-color: $primary-color;
-		.header_container {
-			min-height: 160px;
-			width: 90%;
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			justify-content: space-between;
-			margin: 0 5%;
+  margin: 0%;
 
-			.logo {
-				display: flex;
-			}
-			nav {
-				justify-content: end;
-				ul {
-					color: $secondary-color;
-					display: flex;
-					list-style: none;
-					li {
-						min-width: 100px;
-						&:hover {
-							cursor: pointer;
-							color: $secondary-color;
-							font-weight: 900;
-						}
-						a {
-							text-decoration: none;
-							color: white;
-							font-size: 23px;
-						}
-					}
-				}
-			}
-		}
-	}
+  header {
+    width: 100%;
+    background-color: $primary-color;
+
+    .header_container {
+      display: flex;
+      min-height: 160px;
+      width: 90%;
+      margin: 0 5%;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo {
+        display: flex;
+      }
+
+      nav {
+        justify-content: end;
+
+        ul {
+          display: flex;
+          color: $secondary-color;
+          list-style: none;
+
+          li {
+            min-width: 100px;
+
+            &:hover {
+              font-weight: 900;
+              color: $secondary-color;
+              cursor: pointer;
+            }
+
+            a {
+              font-size: 23px;
+              text-decoration: none;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {
-	body header .header_container {
-		flex-direction: column;
-		flex-wrap: wrap;
-		height: auto;
-	}
-	.logo {
-		margin-top: 2%;
-		width: 50%;
-		justify-content: center;
-	}
-	nav {
-		display: flex;
-		flex-wrap: wrap;
-		max-width: 15%;
-		ul {
-			display: flex;
-			flex-wrap: wrap;
-			width: 100%;
-			padding: 0;
-			justify-content: center;
-			// font-size: 10px;
-			li {
-				display: flex;
-				justify-content: center;
-				a {
-					padding-top: 20%;
-				}
-			}
-		}
-	}
+  body header .header_container {
+    flex-direction: column;
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    width: 50%;
+    margin-top: 2%;
+    justify-content: center;
+  }
+
+  nav {
+    display: flex;
+    max-width: 15%;
+    flex-wrap: wrap;
+
+    ul {
+      display: flex;
+      width: 100%;
+      padding: 0;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      li {
+        display: flex;
+        justify-content: center;
+
+        a {
+          padding-top: 20%;
+        }
+      }
+    }
+  }
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
 }
+
 @media (min-width: 992px) and (max-width: 1199px) {
-	//lg
 }
