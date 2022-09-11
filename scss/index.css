@@ -34,7 +34,7 @@ body header .header_container nav ul li:hover {
   cursor: pointer;
 }
 body header .header_container nav ul li a {
-  font-size: 23px;
+  font-size: 1.5rem;
   text-decoration: none;
   color: white;
 }
@@ -101,7 +101,7 @@ body header .header_container nav ul li a {
   font-weight: 100;
   line-height: 3rem;
   margin-bottom: 4rem;
-  font-size: 12px;
+  font-size: 0.7rem;
   background-color: white;
   color: #005ad5;
   cursor: pointer;
@@ -227,13 +227,13 @@ body header .header_container nav ul li a {
   text-align: center;
 }
 #offer h1 {
-  font-size: 50px;
+  font-size: 3rem;
 }
 #offer h2 {
-  font-size: 26px;
+  font-size: 1.6rem;
 }
 #offer p {
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 140%;
   padding: 0 20px;
   font-weight: 200;
@@ -312,7 +312,7 @@ body header .header_container nav ul li a {
   display: flex;
   width: 100%;
   max-width: 1400px;
-  margin: 0 auto 40px;
+  margin: 0 auto auto;
   flex-direction: column;
 }
 #informations .informations_container .information_block {
@@ -321,7 +321,7 @@ body header .header_container nav ul li a {
 }
 #informations .informations_container .information_block .information_block_decription {
   width: 50%;
-  padding: 2% 5% 5% 0%;
+  padding: 2% 5% 5% 2%;
   color: black;
   font-weight: normal;
   text-align: left;
@@ -329,19 +329,14 @@ body header .header_container nav ul li a {
 #informations .informations_container .information_block .information_block_decription h1 {
   color: black;
   padding: 2% 0%;
-  margin-bottom: 15px;
-  font-size: 40px;
-  text-indent: 40px;
+  font-size: 2.5rem;
 }
 #informations .informations_container .information_block .information_block_decription h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
+  font-size: 1.6rem;
   padding: 10% 0 2% 0;
-  text-indent: 40px;
 }
 #informations .informations_container .information_block .information_block_decription p {
-  padding-left: 10%;
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 180%;
 }
 #informations .informations_container .information_block .information_image {
@@ -445,17 +440,17 @@ body header .header_container nav ul li a {
   font-weight: 600;
   color: black;
 }
-#contact .contact_container form .name_email {
+#contact .contact_container form .data_mini_container {
   display: flex;
   width: 100%;
   flex-direction: row;
   justify-content: space-between;
 }
-#contact .contact_container form .name_email .name {
+#contact .contact_container form .data_mini_container .name {
   width: 45%;
   margin-right: 5%;
 }
-#contact .contact_container form .name_email .email {
+#contact .contact_container form .data_mini_container .email {
   width: 45%;
 }
 #contact .contact_container form .description {
@@ -478,16 +473,16 @@ body header .header_container nav ul li a {
     flex-direction: column;
     align-items: center;
   }
-  #contact .contact_container form .name_email {
+  #contact .contact_container form .data_mini_container {
     display: flex;
     width: 90%;
     flex-direction: column;
   }
-  #contact .contact_container form .name_email .name {
+  #contact .contact_container form .data_mini_container .name {
     width: 100%;
     margin: 0;
   }
-  #contact .contact_container form .name_email .email {
+  #contact .contact_container form .data_mini_container .email {
     width: 100%;
   }
   #contact .contact_container form .topic {
@@ -503,16 +498,16 @@ body header .header_container nav ul li a {
     flex-direction: column;
     align-items: center;
   }
-  #contact .contact_container form .name_email {
+  #contact .contact_container form .data_mini_container {
     display: flex;
     width: 90%;
     flex-direction: column;
   }
-  #contact .contact_container form .name_email .name {
+  #contact .contact_container form .data_mini_container .name {
     width: 100%;
     margin: 0;
   }
-  #contact .contact_container form .name_email .email {
+  #contact .contact_container form .data_mini_container .email {
     width: 100%;
   }
   #contact .contact_container form .topic {
@@ -528,16 +523,16 @@ body header .header_container nav ul li a {
     flex-direction: row;
     align-items: center;
   }
-  #contact .contact_container form .name_email {
+  #contact .contact_container form .data_mini_container {
     display: flex;
     width: 90%;
     justify-content: space-between;
   }
-  #contact .contact_container form .name_email .name {
+  #contact .contact_container form .data_mini_container .name {
     width: 45%;
     margin: 0;
   }
-  #contact .contact_container form .name_email .email {
+  #contact .contact_container form .data_mini_container .email {
     width: 45%;
   }
   #contact .contact_container form .topic {
@@ -763,4 +758,4 @@ body header .header_container nav ul li a {
     width: calc(8.333333% * 12);
     flex-basis: calc(8.333333% * 12);
   }
-}/*# sourceMappingURL=general.css.map */
+}/*# sourceMappingURL=index.css.map */

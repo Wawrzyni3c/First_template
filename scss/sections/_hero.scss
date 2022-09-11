@@ -31,7 +31,7 @@
       font-weight: 100;
       line-height: 3rem;
       margin-bottom: 4rem;
-      font-size: 12px;
+      font-size: 0.7rem;
       background-color: white;
       color: $primary-color;
       cursor: pointer;
@@ -64,7 +64,6 @@
     padding-top: 20%;
     margin-top: -1%;
     flex-direction: column;
-    // justify-content: center;
     justify-content: flex-start;
 
     .welcome_text {
