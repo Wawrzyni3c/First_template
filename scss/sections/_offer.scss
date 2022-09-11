@@ -1,50 +1,104 @@
 #offer {
-	margin: 0%;
-	margin-top: 200px;
-	max-width: 1864px;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	padding: 5%;
-	h1 {
-		font-size: 50px;
-	}
-	h2 {
-		font-size: 26px;
-	}
-	p {
-		font-size: 18px;
-		line-height: 140%;
-		padding: 0 20px;
-		font-weight: 200;
-		margin-top: 5%;
-	}
-	.all_products {
-		margin: 20px;
-		padding: 5%;
-		box-sizing: border-box;
-		display: flex;
-		justify-content: space-between;
-		.product {
-			min-height: 500px;
-			border: solid 2px black;
-			border-radius: 20px;
-			width: 30%;
-			button {
-				width: 150px;
-				height: 60px;
-				color: $primary-color;
-				border: solid $primary-color 2px;
-				border-radius: 5px;
-				cursor: pointer;
-				margin: 2.5% 0% 10% 0%;
-				&:hover {
-					color: red;
-				}
-			}
-			.offer_tile_image {
-				padding-top: 5%;
-			}
-		}
-	}
+  display: flex;
+  width: 100%;
+  margin: 10% 0;
+  flex-direction: column;
+  text-align: center;
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 140%;
+    padding: 0 20px;
+    font-weight: 200;
+    margin-top: 5%;
+  }
+
+  .all_products {
+    display: flex;
+    padding: 0 5%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .product {
+      max-width: 400px;
+      min-height: 500px;
+      border-radius: 20px;
+      border: solid 2px black;
+      margin: 3% 2%;
+
+      button {
+        width: 150px;
+        height: 60px;
+        border-radius: 5px;
+        border: solid $primary-color 2px;
+        color: $primary-color;
+        cursor: pointer;
+        margin: 2.5% 0% 10% 0%;
+
+        &:hover {
+          color: red;
+        }
+      }
+
+      .offer_tile_image {
+        padding-top: 5%;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #offer {
+    .all_products {
+      flex-direction: column;
+      align-items: center;
+
+      .product {
+        width: 90%;
+        max-width: 100%;
+        margin: 3% 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #offer {
+    .all_products {
+      display: flex;
+      padding: 0 7%;
+      align-items: center;
+
+      .product {
+        width: 90%;
+        max-width: 28%;
+        margin: 3% 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #offer {
+    .all_products {
+      display: flex;
+      padding: 0 7%;
+      align-items: center;
+
+      .product {
+        width: 90%;
+        max-width: 30%;
+        margin: 3% 0;
+      }
+    }
+  }
 }

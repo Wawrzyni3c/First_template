@@ -1,51 +1,97 @@
 #informations {
-	display: flex;
-	width: 100%;
-	.informations_container {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		max-width: 1400px;
-		margin: 0 auto 20px;
-		margin-bottom: 40px;
-		.information_block {
-			display: flex;
-			flex-direction: row;
-			.information_block_decription {
-				width: 50%;
-				color: black;
-				font-weight: normal;
-				padding: 2% 5% 5% 0%;
-				text-align: left;
-				h1 {
-					font-size: 40px;
-					color: black;
-					text-indent: 40px;
-					padding: 2% 0%;
-					margin-bottom: 15px;
-				}
-				h2 {
-					font-size: 28px;
-					margin-bottom: 20px;
-					padding-bottom: 1.5%;
-					text-indent: 40px;
-					padding-top: 10%;
-				}
-				p {
-					font-size: 18px;
-					padding-left: 10%;
-					line-height: 180%;
-				}
-			}
-			.information_image {
-				display: flex;
-				width: 50%;
-				img {
-					display: block;
-					width: 100%;
-					object-fit: contain;
-				}
-			}
-		}
-	}
+  display: flex;
+  width: 100%;
+
+  .informations_container {
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto auto;
+    flex-direction: column;
+
+    .information_block {
+      display: flex;
+      flex-direction: row;
+
+      .information_block_decription {
+        width: 50%;
+        padding: 2% 5% 5% 2%;
+        color: black;
+        font-weight: normal;
+        text-align: left;
+
+        h1 {
+          color: black;
+          padding: 2% 0%;
+          font-size: 2.5rem;
+        }
+
+        h2 {
+          font-size: 1.6rem;
+          padding: 10% 0 2% 0;
+        }
+
+        p {
+          font-size: 1rem;
+          line-height: 180%;
+        }
+      }
+
+      .information_image {
+        display: flex;
+        width: 50%;
+
+        img {
+          display: block;
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  main {
+    #informations {
+      .informations_container {
+        width: 100%;
+
+        .information_block {
+          padding: 0;
+          flex-direction: column;
+          flex-wrap: wrap;
+          align-items: center;
+
+          .information_block_decription {
+            width: 90%;
+            padding: 0;
+            text-align: center;
+            align-items: center;
+
+            p {
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  h1 {
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
 }
